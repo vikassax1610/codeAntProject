@@ -1,0 +1,155 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+  background-color: #fafafa;
+}
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.left {
+  width: 50%;
+  visibility: visible;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.leftHeading,
+.leftLogo {
+  display: inline;
+}
+.leftHeading {
+  padding: 30px 98px 20px 40px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-bottom: 2px solid rgb(209, 206, 206);
+}
+.leftLogo {
+  width: 30px;
+  height: 30px;
+  padding-bottom: 5px;
+}
+.left1 {
+  margin-top: 22%;
+  margin-left: 18%;
+  display: flex;
+  padding: 1%;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.leftdown1 {
+  align-items: start;
+  display: flex;
+  gap: 60px;
+  padding: 20px;
+  z-index: 1;
+
+  position: relative;
+}
+.left2 {
+  z-index: 2;
+  margin-bottom: 10%;
+  margin-left: 38%;
+  display: flex;
+  padding: 2% 1% 3% 2%;
+  width: 45%;
+  align-items: center;
+  flex-direction: row;
+  gap: 53%;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.1);
+  bottom: -50px;
+}
+.fadeLogo {
+  height: 250px;
+  width: 250px;
+  margin-top: 32%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-bottom: 10px;
+}
+
+.right {
+  /* margin-left: 90px; */
+  width: auto;
+  height: auto;
+}
+.right-bottom {
+  padding-left: 10px;
+}
+@media screen and (max-width: 640px) {
+  .left {
+    visibility: hidden;
+  }
+  .container {
+    width: 100%;
+    position: relative;
+    left: -95px;
+    background-color: #fafafa;
+  }
+  .right {
+    /* background-color: red; */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    left: -53px;
+  }
+  .right-main {
+    width: 110%;
+    margin-top: 20px;
+    position: relative;
+    left: 0px;
+    top: 36px;
+    gap: 2px;
+    display: flex;
+    flex-direction: column;
+  }
+  .top-right {
+    display: flex;
+    gap: 20px;
+  }
+  .right-bottom {
+    padding: 0 4px 0 4px;
+    background-color: white;
+    text-align: center;
+  }
+  .logo {
+    font-size: 28px;
+    margin: 0;
+    padding-left: 61px;
+    padding-top: 26px;
+  }
+  .welcome-msg {
+    padding-left: 27px;
+    font-size: 20px;
+  }
+  .saas,
+  .self-hosted {
+    width: 40%;
+    padding: 1px 4px 5px 0;
+    height: auto;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 7px;
+  }
+
+  .sign-btn {
+    padding: 2px 10px 2px 20px;
+    width: 90%;
+  }
+  .lastPara {
+    position: relative;
+    top: 21px;
+    right: 197px;
+    width: 100%;
+    font-size: small;
+  }
+}
