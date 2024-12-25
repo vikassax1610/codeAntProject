@@ -8,9 +8,9 @@ import Login from "./components/Login";
 function App() {
   return (
     <>
-      {/* <Home /> */}
+      <Home />
       {/* <Register /> */}
-      <Login />
+      {/* <Login /> */}
     </>
   );
 }
