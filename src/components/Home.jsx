@@ -101,7 +101,7 @@ export default function Home() {
           <div>
             <h1 className="text-3xl">Repositories</h1>
             <p className="text-zinc-600">33 total repositories</p>
-            <div className="mt-3 border-2 border-gray-300 pl-1 rounded-lg py-1 px-2 h-10 max-w-full sm:max-w-sm md:max-w-md lg:max-w-lg flex items-center">
+            <div className="mt-3 border-2 border-gray-300 pl-1 rounded-lg py-1 px-2 h-10 max-w-full bg-white sm:max-w-sm md:max-w-md lg:max-w-lg flex items-center">
               <label className="text-gray-500 mr-2">
                 <SearchIcon sx={{ fontSize: 24 }} />
               </label>
