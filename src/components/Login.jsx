@@ -5,7 +5,9 @@ import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import gitlab from "/svg/gitlab.svg";
 import KeyIcon from "@mui/icons-material/Key";
 import "./Register.css";
-
+import Register from "./Register";
+import { Link } from "react-router-dom";
+import Home from "./Home";
 export default function Login() {
   return (
     <>
@@ -76,10 +78,12 @@ export default function Login() {
               <h2 className=" welcome-msg text-2xl text-left pl-48 font-bold">
                 Welcome to Code Ant AI
               </h2>
-              <div className=" flex ">
-                <button className="saas text-xl rounded-lg px-32 py-2 font-semibold tracking-wider text-zinc-700 bg-slate-200 ml-10">
-                  SAAS
-                </button>
+              <div className=" flex flex-row flex-wrap w-full align-center justify-center gap-2">
+                <Link to="/">
+                  <button className="saas text-xl rounded-lg px-32 py-2 font-semibold tracking-wider text-zinc-700 bg-slate-200 ml-10">
+                    SAAS
+                  </button>
+                </Link>
                 <button className=" self-hosted bg-blue-500 text-white text-xl rounded-lg px-32 py-2 font-semibold tracking-wider mr-5">
                   Self Hosted
                 </button>
@@ -90,21 +94,25 @@ export default function Login() {
             <hr />
 
             <div className="right-bottom flex flex-col items-center mt-10 w-full gap-5 mb-5">
-              <button className="sign-btn border-2 border-gray-300 text-base font-bold w-80 py-2 rounded-lg">
-                <img
-                  src={gitlab}
-                  alt="GitLab"
-                  className="w-8 inline pr-3 mb-1"
-                />
-                Self Hosted GitLab
-              </button>
-              <button className="sign-btn border-2 border-gray-300 text-base font-bold w-80 py-2 rounded-lg">
-                <KeyIcon
-                  sx={{ fontSize: 20, transform: "rotate(135deg) scaleX(1)" }}
-                  className="mr-2"
-                />
-                Sign in with SSO
-              </button>
+              <Link to="/Home">
+                <button className="sign-btn border-2 border-gray-300 text-base font-bold w-80 py-2 rounded-lg">
+                  <img
+                    src={gitlab}
+                    alt="GitLab"
+                    className="w-8 inline pr-3 mb-1"
+                  />
+                  Self Hosted GitLab
+                </button>
+              </Link>
+              <Link to="/Home">
+                <button className="sign-btn border-2 border-gray-300 text-base font-bold w-80 py-2 rounded-lg">
+                  <KeyIcon
+                    sx={{ fontSize: 20, transform: "rotate(135deg) scaleX(1)" }}
+                    className="mr-2"
+                  />
+                  Sign in with SSO
+                </button>
+              </Link>
               <br />
               <br />
             </div>

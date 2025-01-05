@@ -6,7 +6,9 @@ import azure from "/svg/azure-devops.svg";
 import bitbucket from "/svg/bitbucket.svg";
 import github from "/svg/github.svg";
 import gitlab from "/svg/gitlab.svg";
-
+import Login from "./Login";
+import Home from "./Home";
+import { Link } from "react-router-dom";
 import "./Register.css";
 export default function Register() {
   return (
@@ -68,20 +70,23 @@ export default function Register() {
         <div className="right flex flex-col  mt-20 ">
           <div className="right-main bg-white rounded-lg">
             <div className="top-right flex flex-col gap-10">
-              <h1 className="logo inline text-3xl leading-snug tracking-tighter pl-64">
+              <h1 className="logo inline text-3xl leading-snug tracking-tighter pl-64 mt-5">
                 <img src={logo} alt="Logo" className="inline pr-3" />
                 CodeAnt AI
               </h1>
               <h2 className="welcome-msg text-2xl text-left pl-48 font-bold">
                 Welcome to Code Ant AI
               </h2>
-              <div className="flex">
+              <div className="flex flex-row w-full align-center justify-center gap-1">
                 <button className="saas bg-blue-500 text-white text-xl rounded-lg px-32 py-2 font-semibold tracking-wider ml-10">
                   SAAS
                 </button>
-                <button className="self-hosted text-xl rounded-lg px-32 py-2 font-semibold tracking-wider text-zinc-700 bg-slate-200 mr-5">
-                  Self Hosted
-                </button>
+
+                <Link to="/Login">
+                  <button className="self-hosted text-xl rounded-lg px-32 py-2 font-semibold tracking-wider text-zinc-700 bg-slate-200 mr-2 text-center">
+                    Self Hosted
+                  </button>
+                </Link>
               </div>
             </div>
             <br />
@@ -89,22 +94,34 @@ export default function Register() {
             <hr />
 
             <div className="right-bottom flex flex-col items-center mt-10 w-full gap-5 mb-5">
-              <button className="sign-btn border-2 border-gray-300 text-base font-bold w-80 py-2 rounded-lg">
-                <img src={github} alt="" className="w-8 inline pr-3 mb-1" />
-                Sign in with Github
-              </button>
-              <button className="sign-btn border-2 border-gray-300 text-base font-bold w-80 py-2 rounded-lg">
-                <img src={bitbucket} alt="" className="w-8 inline pr-2 mb-1" />
-                Sign in with Bitbucket
-              </button>
-              <button className="sign-btn border-2 border-gray-300 text-base font-bold w-80 py-2 rounded-lg">
-                <img src={azure} alt="" className="w-8 inline pr-2 mb-1" />
-                Sign in with Azure Devops
-              </button>
-              <button className="sign-btn border-2 border-gray-300 text-base font-bold w-80 py-2 rounded-lg">
-                <img src={gitlab} alt="" className="w-8 inline pr-3 mb-1" />
-                Sign in with GitLab
-              </button>
+              <Link to="/Home">
+                <button className="sign-btn border-2 border-gray-300 text-base font-bold w-80 py-2 rounded-lg">
+                  <img src={github} alt="" className="w-8 inline pr-3 mb-1" />
+                  Sign in with Github
+                </button>
+              </Link>
+              <Link to="/Home">
+                <button className="sign-btn border-2 border-gray-300 text-base font-bold w-80 py-2 rounded-lg">
+                  <img
+                    src={bitbucket}
+                    alt=""
+                    className="w-8 inline pr-2 mb-1"
+                  />
+                  Sign in with Bitbucket
+                </button>
+              </Link>
+              <Link to="/Home">
+                <button className="sign-btn border-2 border-gray-300 text-base font-bold w-80 py-2 rounded-lg">
+                  <img src={azure} alt="" className="w-8 inline pr-2 mb-1" />
+                  Sign in with Azure Devops
+                </button>
+              </Link>
+              <Link to="/Home">
+                <button className="sign-btn border-2 border-gray-300 text-base font-bold w-80 py-2 rounded-lg">
+                  <img src={gitlab} alt="" className="w-8 inline pr-3 mb-1" />
+                  Sign in with GitLab
+                </button>
+              </Link>
             </div>
           </div>
           <p className="lastPara text-base ml-56 tracking-tight mt-4">

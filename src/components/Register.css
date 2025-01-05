@@ -131,11 +131,16 @@ body {
     padding-left: 27px;
     font-size: 20px;
   }
-  .saas,
+  .saas {
+    padding: 1px 20px 5px 20px;
+    height: 37px;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 7px;
+  }
   .self-hosted {
-    width: 40%;
-    padding: 1px 4px 5px 0;
-    height: auto;
+    padding: 1px 20px 5px 20px;
+    height: 37px;
     font-size: 15px;
     font-weight: 700;
     border-radius: 7px;

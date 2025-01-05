@@ -14,7 +14,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close"; // Import CloseIcon
 import Database from "/png/database.png";
 import { HardCodeData } from "../data.js";
-
+import { Link } from "react-router-dom";
+import Register from "./Register.jsx";
 export default function Home() {
   const [selectedValue, setSelectedValue] = useState("");
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -90,8 +91,10 @@ export default function Home() {
             Support
           </li>
           <li className="flex items-center gap-2 px-5 py-2 text-lg text-zinc-700 cursor-pointer hover:bg-blue-500 hover:text-white hover:rounded-md">
-            <LogoutIcon sx={{ fontSize: 30 }} />
-            Logout
+            <Link to="/">
+              <LogoutIcon sx={{ fontSize: 30 }} />
+              Logout
+            </Link>
           </li>
         </ul>
       </div>
