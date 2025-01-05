@@ -45,7 +45,6 @@ export default function Register() {
             </div>
           </div>
           <div className="left2 flex flex-col gap-4 bg-white">
-            {/* Row with GraphAuth and 14% */}
             <div className="flex items-center justify-between">
               <div className="flex flex-col items-start">
                 <img src={GraphAuth} alt="Graph Auth" className="w-12" />
