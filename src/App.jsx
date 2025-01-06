@@ -6,8 +6,8 @@ import Register from "./components/Register";
 import Login from "./components/Login";
 import Navbar from "./components/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Signup from "./components/Pages/Signup";
-import Login2 from "./components/Pages/Login2";
+import Signup from "./Pages/Signup";
+import Login2 from "./Pages/Login2";
 function App() {
   return (
     <>

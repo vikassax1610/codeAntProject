@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 import Home from "./Home";
 import Register from "./Register";
 import Login from "./Login";
-import Signup from "../components/Pages/Signup";
-import Login2 from "../components/Pages/Login2";
+import Signup from "../Pages/Signup";
+import Login2 from "../Pages/Login2";
 export default function Navbar() {
   return (
     <>

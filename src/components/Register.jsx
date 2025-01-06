@@ -8,7 +8,7 @@ import github from "/svg/github.svg";
 import gitlab from "/svg/gitlab.svg";
 import Login from "./Login";
 
-import Signup from "../components/Pages/Signup";
+import Signup from "../Pages/Signup";
 import { Link } from "react-router-dom";
 import "./Register.css";
 export default function Register() {
