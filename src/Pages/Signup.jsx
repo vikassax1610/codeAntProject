@@ -6,7 +6,7 @@ import gitlab from "/svg/gitlab.svg";
 import KeyIcon from "@mui/icons-material/Key";
 import { Link } from "react-router-dom";
 
-import "./signup.css";
+import "./Signup.css";
 export default function Signup() {
   return (
     <>
