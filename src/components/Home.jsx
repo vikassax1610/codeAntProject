@@ -11,7 +11,7 @@ import CachedIcon from "@mui/icons-material/Cached";
 import AddIcon from "@mui/icons-material/Add";
 import SearchIcon from "@mui/icons-material/Search";
 import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close"; // Import CloseIcon
+import CloseIcon from "@mui/icons-material/Close";
 import Database from "/png/database.png";
 import { HardCodeData } from "../data.js";
 import { Link } from "react-router-dom";
@@ -63,7 +63,7 @@ export default function Home() {
         </select>
 
         <ul className="flex flex-col gap-2 font-medium">
-          <li className="flex items-center gap-2 px-5 py-2 text-lg cursor-pointer hover:bg-blue-500 hover:text-white hover:rounded-md">
+          <li className="flex items-center gap-2 px-5 py-2 text-lg cursor-pointer bg-blue-500 text-white rounded-md">
             <HomeIcon sx={{ fontSize: 30 }} />
             Repositories
           </li>

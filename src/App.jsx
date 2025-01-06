@@ -6,6 +6,8 @@ import Register from "./components/Register";
 import Login from "./components/Login";
 import Navbar from "./components/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Signup from "./components/Pages/Signup";
+import Login2 from "./components/Pages/Login2";
 function App() {
   return (
     <>
@@ -14,8 +16,11 @@ function App() {
           <Route path="/" element={<Register />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/Login" element={<Login />} />
+          <Route path="/Signup" element={<Signup />} />
+          <Route path="/Login2" element={<Login2 />} />
         </Routes>
       </BrowserRouter>
+      {/*  */}
     </>
   );
 }

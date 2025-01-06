@@ -4,17 +4,15 @@ import GraphAuth from "/png/GrapAuth.png";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import gitlab from "/svg/gitlab.svg";
 import KeyIcon from "@mui/icons-material/Key";
-import "./Register.css";
-import Register from "./Register";
 import { Link } from "react-router-dom";
-import Home from "./Home";
-export default function Login() {
- 
+
+import "./signup.css";
+export default function Signup() {
   return (
     <>
-      <div className="container">
+      <div className="container w-full">
         {/* Left Section */}
-        <div className="left">
+        <div className="left w-1/2">
           <div className="left1 bg-white">
             <h1 className="leftHeading">
               <img src={logo} alt="Logo" className="leftLogo" />
@@ -69,53 +67,60 @@ export default function Login() {
         </div>
 
         {/* Right Section */}
-        <div className="right flex flex-col mt-20">
-          <div className=" right-main bg-white rounded-lg">
-            <div className="top-right flex flex-col gap-10">
-              <h1 className="logo inline text-3xl leading-snug tracking-tighter pl-64">
+        <div className="right flex flex-col mt-2 w-1/2   max-h-min">
+          <div className=" right-main bg-white rounded-xl mt-24 p-10 shadow-lg mr-10 ml-44">
+            <div className="top-right flex flex-col gap-10 ">
+              <h1 className="logo inline text-3xl leading-snug tracking-tighter text-center ">
                 <img src={logo} alt="Logo" className="inline pr-3" />
                 CodeAnt AI
               </h1>
-              <h2 className=" welcome-msg text-2xl text-left pl-48 font-bold">
-                Welcome to Code Ant AI
-              </h2>
-              <div className=" flex flex-row flex-wrap w-full align-center justify-center gap-2">
-                <Link to="/">
-                  <button className="saas text-xl rounded-lg px-32 py-2 font-semibold tracking-wider text-zinc-700 bg-slate-200 ml-10">
-                    SAAS
-                  </button>
-                </Link>
-                <button className=" self-hosted bg-blue-500 text-white text-xl rounded-lg px-32 py-2 font-semibold tracking-wider mr-5">
-                  Self Hosted
-                </button>
-              </div>
             </div>
-            <br />
-            <br />
-            <hr />
+            <div className="mt-5 p-5 rounded-lg flex flex-col items-center">
+              <h1 className="text-xl font-extrabold mb-5  tracking-tighter">
+                Sign UP Now
+              </h1>
+              <div className=" form flex flex-col  w-80 gap-2">
+                <input
+                  className="text-xl px-2 py-2 rounded-lg  w-full bg-slate-100 shadow-md mb-2 "
+                  type="text"
+                  name="username"
+                  placeholder="Enter your username here"
+                ></input>
 
-            <div className="right-bottom flex flex-col items-center mt-10 w-full gap-5 mb-5">
-              <Link to="/Login2">
-                <button className="sign-btn border-2 border-gray-300 text-base font-bold w-80 py-2 rounded-lg">
-                  <img
-                    src={gitlab}
-                    alt="GitLab"
-                    className="w-8 inline pr-3 mb-1"
-                  />
-                  Self Hosted GitLab
-                </button>
-              </Link>
-              <Link to="/Login2">
-                <button className="sign-btn border-2 border-gray-300 text-base font-bold w-80 py-2 rounded-lg">
-                  <KeyIcon
-                    sx={{ fontSize: 20, transform: "rotate(135deg) scaleX(1)" }}
-                    className="mr-2"
-                  />
-                  Sign in with SSO
-                </button>
-              </Link>
-              <br />
-              <br />
+                <input
+                  className="text-xl px-2 py-2 rounded-lg  w-full bg-slate-100 shadow-md mb-2"
+                  type="text"
+                  name="fname"
+                  placeholder="Enter your first name"
+                ></input>
+
+                <input
+                  className="text-xl px-2 py-2 rounded-lg  w-full bg-slate-100 shadow-md mb-2"
+                  type="text"
+                  name="lname"
+                  placeholder="Enter your Last name"
+                ></input>
+
+                <input
+                  className="text-xl px-2 py-2 rounded-lg  w-full bg-slate-100 shadow-md mb-2"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email here"
+                ></input>
+
+                <input
+                  className="text-xl px-2 py-2 rounded-lg  w-full bg-slate-100 shadow-md mb-2"
+                  type="password"
+                  name="password"
+                  placeholder="Enter your password here"
+                ></input>
+                <Link
+                  to="/Home"
+                  className="text-xl font-bold bg-blue-400 active:bg-blue-600 text-white py-2 rounded-lg shadow-md text-center"
+                >
+                  <button>Signup</button>
+                </Link>
+              </div>
             </div>
           </div>
           <p className="lastPara text-base ml-56 tracking-tight mt-4">

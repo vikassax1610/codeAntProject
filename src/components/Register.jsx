@@ -7,7 +7,8 @@ import bitbucket from "/svg/bitbucket.svg";
 import github from "/svg/github.svg";
 import gitlab from "/svg/gitlab.svg";
 import Login from "./Login";
-import Home from "./Home";
+
+import Signup from "../components/Pages/Signup";
 import { Link } from "react-router-dom";
 import "./Register.css";
 export default function Register() {
@@ -93,13 +94,13 @@ export default function Register() {
             <hr />
 
             <div className="right-bottom flex flex-col items-center mt-10 w-full gap-5 mb-5">
-              <Link to="/Home">
+              <Link to="/Signup">
                 <button className="sign-btn border-2 border-gray-300 text-base font-bold w-80 py-2 rounded-lg">
                   <img src={github} alt="" className="w-8 inline pr-3 mb-1" />
                   Sign in with Github
                 </button>
               </Link>
-              <Link to="/Home">
+              <Link to="/Signup">
                 <button className="sign-btn border-2 border-gray-300 text-base font-bold w-80 py-2 rounded-lg">
                   <img
                     src={bitbucket}
@@ -109,13 +110,13 @@ export default function Register() {
                   Sign in with Bitbucket
                 </button>
               </Link>
-              <Link to="/Home">
+              <Link to="/Signup">
                 <button className="sign-btn border-2 border-gray-300 text-base font-bold w-80 py-2 rounded-lg">
                   <img src={azure} alt="" className="w-8 inline pr-2 mb-1" />
                   Sign in with Azure Devops
                 </button>
               </Link>
-              <Link to="/Home">
+              <Link to="/Signup">
                 <button className="sign-btn border-2 border-gray-300 text-base font-bold w-80 py-2 rounded-lg">
                   <img src={gitlab} alt="" className="w-8 inline pr-3 mb-1" />
                   Sign in with GitLab

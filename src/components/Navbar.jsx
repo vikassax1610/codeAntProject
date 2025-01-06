@@ -2,6 +2,8 @@ import { NavLink } from "react-router-dom";
 import Home from "./Home";
 import Register from "./Register";
 import Login from "./Login";
+import Signup from "../components/Pages/Signup";
+import Login2 from "../components/Pages/Login2";
 export default function Navbar() {
   return (
     <>
@@ -14,6 +16,12 @@ export default function Navbar() {
         </li>
         <li>
           <NavLink to="/Login">Log in</NavLink>
+        </li>
+        <li>
+          <NavLink to="/Signin">Sign up</NavLink>
+        </li>
+        <li>
+          <NavLink to="/Login2">Log in</NavLink>
         </li>
       </ul>
     </>
